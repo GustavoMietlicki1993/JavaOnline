@@ -13,7 +13,7 @@ public class HerancaTest {
 		end.setBairro("Bairro 1");
 		end.setRua("Rua 25");
 		p.setEndereco(end);
-//		p.print();
+		p.print();
 
 		System.out.println("-------------------------------------------");
 
@@ -22,7 +22,7 @@ public class HerancaTest {
    		f.setCpf("111.222.333-44");
 		f.setSalario(15000);
 		f.setEndereco(end);
-//		f.print();
+		f.print();
 
 	}
 }
