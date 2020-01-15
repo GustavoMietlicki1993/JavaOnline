@@ -14,6 +14,9 @@ public class Pessoa extends Object {
 		this(nome);
 		this.cpf = cpf;
 	}
+	public Pessoa() {
+		  
+	}
 
 	static {
 		System.out.println("Bloco de inicializacao estatico de pessoa.");
