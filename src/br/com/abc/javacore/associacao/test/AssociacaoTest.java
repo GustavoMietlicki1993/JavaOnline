@@ -25,8 +25,9 @@ public class AssociacaoTest {
 		semArray[0] = seminario;
 		prof.setSeminarios(semArray);
 
-//		seminario.print();
-//		aluno.print();
+		seminario.print();
+		aluno.print();
+		aluno2.print();
 		local.print();
 	}
 

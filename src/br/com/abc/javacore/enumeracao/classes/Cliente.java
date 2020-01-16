@@ -10,17 +10,20 @@ public class Cliente {
 	private TipoCliente tipo;
 	private TipoPagamento tipoPagamento;
 
-	public Cliente(String nome, TipoCliente tipo) {
+	public Cliente(String nome, TipoCliente tipo, TipoPagamento tipoPagamento) {
 
 		this.nome = nome;
 		this.tipo = tipo;
+		this.tipoPagamento = tipoPagamento;
 
 	}
 
+	
 	@Override
 	public String toString() {
-		return "Cliente [nome=" + nome + ", tipo=" + tipo + "]";
+		return "Cliente [nome=" + nome + ", tipo=" + tipo + ", tipoPagamento=" + tipoPagamento + "]";
 	}
+
 
 	public String getNome() {
 		return nome;
@@ -38,4 +41,13 @@ public class Cliente {
 		this.tipo = tipo;
 	}
 
+	public TipoPagamento getTipoPagamento() {
+		return tipoPagamento;
+	}
+
+	public void setTipoPagamento(TipoPagamento tipoPagamento) {
+		this.tipoPagamento = tipoPagamento;
+	}
+
+	
 }

@@ -17,7 +17,7 @@ public class Aluno {
 		System.out.println("----------- RELATORIO DE ALUNOS -----------");
 		System.out.println("nome do aluno: " + this.nome);
 		System.out.println("idade: " + this.idade);
-		if (this.seminario != null && seminario.	)
+		if (this.seminario != null	)
 			System.out.println("seminario inscrito: " + this.seminario.getTitulo());
 		else
 			System.out.println("Aluno nao esta inscrito em nenhum seminario");
