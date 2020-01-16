@@ -15,12 +15,24 @@ public class RelatorioPagamento {
 //		System.out.println("Nome do vendedor: " + vendedor.getNome());
 //		System.out.println("Salario desse mes: " + vendedor.getSalario());
 //	}
-
+	// Parametros Polimorficos
 	public void relatorioPagamentoGenerico(Funcionario funcionario) {
 		System.out.println("Gerando relatorio de pagamento. ");
 		funcionario.calcularPagamento();
 		System.out.println("Nome: " + funcionario.getNome());
 		System.out.println("Salario desse mes: " + funcionario.getSalario());
+		// instanceof: exemplo: se funcionario "e uma instancia de " Gerente
+		if (funcionario instanceof Gerente) {
+			Gerente g = (Gerente) funcionario;
+			System.out.println("Participacao nos lucros: " + g.getPnl());
+		}
+		if (funcionario instanceof Vendedor) {
+			Vendedor v = (Vendedor) funcionario;
+			// (Vendedor) "Cast".
+
+			System.out.println("Total Vendas: " + ((Vendedor) funcionario).getTotalVendas());
+
+		}
 
 	}
 }
